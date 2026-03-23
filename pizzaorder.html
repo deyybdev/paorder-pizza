@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Order Pizza</title> 
+		
+	</head>
+	
+	<body>
+		<form>
+			<h1>Order Pizza</h1>
+			
+			<h3>Personal Details</h3>
+			
+			<label for="fullname">Full Name</label> <br>
+			<input type="text" name="fullname" id="fullname" minlenght="15" maxlenght="45" placeholder="Enter your name" required> <br> <br>
+			<label for="email">Email</label> <br>
+			<input type="email" name="email" id="email" minlenght="15" maxlenght="45" placeholder="Enter your email" required> <br> <br>
+			<label for="tel">Phone</label> <br>
+			<input type="phone" name="phone id="phone" minlenght="15" maxlenght="45" placeholder="e.g 09123456789" required> <br> <br>
+			<label for="age">Age</label> <br>
+			<input type="number" name="age" id="age" min="13" max="99" required> <br><br>
+
+			<h3>Pizza Size</h3>
+			
+			<input type="radio" name="size" id="small" value="Small">Small<br>
+			<input type="radio" name="size" id="medium" value="Medium" checked>Medium<br>
+			<input type="radio" name="size" id="Large" value="Large">Large<br>
+			<input type="radio" name="size" id="extralarge" value="Extra Large">Extra Large<br><br>
+			
+			<h3>Crust Type</h3>
+			
+			<select name="crusttype" id="crusttype" required>          	
+				<option value="default" selected disabled>Choose your crust</option>
+				<option value="Thin">Thin</option>
+            			<option value="Thick">Thick</option>
+            			<option value="Stuffed">Stuffed</option>
+				<option value="Glutten-Free">Glutten-Free</option>
+        		</select>
+
+			<h3>Sauce</h3>
+			
+			<select name="crusttype" id="crusttype" required>          	
+				<optgroup label="Classic">
+					<option value="Tomato">Tomato</option>
+					<option value="Garlic White">Garlic White</option>
+				</optgroup>
+				<optgroup label="Special">
+					<option value="Barbeque">Pesto</option>
+					<option value="Barbeque">Barbeque</option>
+				</optgroup>
+				<br>
+            		</select>
+
+			
+			<h3>Toppings</h3>
+
+			<input type="checkbox" name="toppings" id="cheese" value="Cheese" checked disabled>Cheese<br>
+			<input type="checkbox" name="toppings" id="pepperoni" value="Pepperoni">Pepperoni<br>
+			<input type="checkbox" name="toppings" id="mushrooms" value="Mushrooms">Mushroooms<br>
+			<input type="checkbox" name="toppings" id="onions" value="Onions">Onions<br>
+			<input type="checkbox" name="toppings" id="bellpepper" value="Bell Pepper">Bell Pepper<br>
+			<input type="checkbox" name="toppings" id="olives" value="Olives">Olives<br>
+			<input type="checkbox" name="toppings" id="bacon" value="Bacon">Bacon<br>
+			<input type="checkbox" name="toppings" id="pineapple" value="Pineapple">Pineapple<br><br>
+
+			<h3>Delivery Method</h3>
+			
+			<input type="radio" name="deliverymethod" id="homedelivery" value="homedelivery">Home Delivery<br>
+			<input type="radio" name="deliverymethod" id="storepickup" value="Store Pickup">Store Pickup<br><br>
+
+			<label for="deliveryaddress">Delivery Address</label><br>
+        		<textarea id="feedback" name="feedback" rows="4" cols="50">Enter your delivery Adress
+       			 </textarea><br>
+
+			<h3>Payment Details</h3>
+			
+			<label for="paymentmethod">Payment Method</label><br>
+			<select name="paymentmethod" id="paymentmethod" required>          
+				<option value="Credit Card">Credit Card</option>
+            			<option value="Gcash">Gcash</option>
+            			<option value="Cash on Delivery">Cash on Delivery</option>
+        		</select><br><br>
+			
+			<label for="cardnumber">Card Number (Required for Credit Card only)</label><br>
+			<input type="text" name="cardnumber" id="cardnumber" minlenght="15" maxlenght="45" placeholder="1234567890123456" required> <br> <br>
+			
+			<table>
+				<tr>
+   					 <th>Size</th>
+    					 <th>Base Price</th>
+    					 <th>Extra Topings</th>
+ 				</tr>
+
+			</table>
+		</form>
+	</body
+
+
+
+
+
+
+</html>
